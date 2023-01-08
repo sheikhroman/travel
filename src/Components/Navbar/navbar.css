@@ -72,6 +72,7 @@
   }
   .navBar .navList .btn {
     margin-top: 1rem;
+    background: linear-gradient(to bottom, #ccccff 9%, #3399ff 100%);
   }
   .navBar .navList .btn a {
     font-weight: 600;

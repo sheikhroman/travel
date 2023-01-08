@@ -61,4 +61,86 @@
 .home .homeContent .textDiv .homeTitle {
   position: relative;
   font-size: 1.8rem;
+}
+.home .homeContent .cardDiv {
+  position: relative;
+  padding: 2rem 1rem;
+  background: var(--whiteColor);
+  border-radius: 10px;
+  gap: 1rem;
+}
+.home .homeContent .cardDiv label {
+  display: block;
+  color: var(--textColor);
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.home .homeContent .cardDiv .lable_total {
+  justify-content: space-between;
+  align-items: center;
+}
+.home .homeContent .cardDiv .lable_total .total {
+  color: var(--textColor);
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.home .homeContent .cardDiv .input {
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+}
+.home .homeContent .cardDiv .input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.home .homeContent .cardDiv .input input:placeholder {
+  font-size: 13px;
+}
+.home .homeContent .cardDiv .input .icon {
+  font-size: 13px;
+  color: var(--PrimaryColor);
+  margin-left: 10px;
+}
+.home .homeContent .cardDiv .input .input[type=range] {
+  background: blue;
+}
+.home .homeContent .cardDiv .searchOption {
+  position: absolute;
+  background: linear-gradient(to bottom, #ccccff 9%, #3399ff 100%);
+  width: max-content;
+  bottom: -0.7rem;
+  column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.home .homeContent .cardDiv .searchOption:hover {
+  background: linear-gradient(to bottom left, #0099cc 9%, #9999ff 100%);
+}
+.home .homeContent .cardDiv .searchOption .icon {
+  font-size: 18px;
+}
+.home .homeContent .cardDiv .searchOption span {
+  font-size: 18px;
+}
+.home .homeContent .homeFooterIcons {
+  width: 100%;
+  justify-content: space-between;
+}
+.home .homeContent .homeFooterIcons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.home .homeContent .homeFooterIcons .icon:hover {
+  color: #3399ff;
 }/*# sourceMappingURL=home.css.map */

@@ -73,4 +73,7 @@
   object-fit: cover;
   transition: 2s ease;
   border-radius: 0.5rem;
+}
+.main .secContent .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */

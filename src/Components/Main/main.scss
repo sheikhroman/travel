@@ -70,6 +70,11 @@
                     transition: 2s ease;
                     border-radius: .5rem;
                 }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
             }
         }
     }

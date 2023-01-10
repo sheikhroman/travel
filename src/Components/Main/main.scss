@@ -76,6 +76,74 @@
                     }
                 }
             }
+            .cardInfo{
+                padding: 1rem;
+
+                .destTitle{
+                    color: var(--blackColor);
+                    font-size: 1.25rem;
+                }
+                .continet{
+                    gap: .5rem;
+                    .icon{
+                        color: var(--textColor);
+                        font-size: 18px;
+                    }
+                    .name{
+                        color: var(--textColor);
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+                .fees{
+                    width: 100%;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    margin: 1rem 0;
+                    border-top: 1.5px solid var(--greyText);
+                    border-bottom: 1.5px solid var(--greyText);
+
+                    .grade{
+                        color: var(--textColor);
+                        max-width: 100px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        small{
+                            text-align: center;
+                            background: linear-gradient(to bottom, #ccccff 9%, #3399ff 100%);
+                            border-radius: 1rem;
+                            color: var(--whiteColor);
+                            padding: 1px 10px;
+                            font-size: 10px;
+                        }
+                    }
+                    .price{
+                        font-size: 2rem;
+                        color: var(--blackColor);
+                    }
+                }
+                .desc{
+                    font-size: 13.5px;
+                    color: var(--textColor);
+                    font-weight: 500;
+                }
+                .btn{
+                    margin-top: 1rem;
+                    color: var(--whiteColor);
+                    font-weight: 600;
+                    justify-content: space-between;
+                    gap: .5rem;
+
+                    .icon{
+                        align-self: center;
+                        font-size: 18px;
+                    }
+                }
+            }
+
         }
     }
 }

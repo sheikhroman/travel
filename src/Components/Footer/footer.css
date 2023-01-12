@@ -83,6 +83,8 @@
 }
 .footer .secContent .contactDiv .inputDiv input::placeholder {
   color: var(--whiteColor);
+  font-size: 15px;
+  text-align: center;
   opacity: 0.7;
 }
 .footer .secContent .contactDiv .inputDiv .btn {
@@ -94,4 +96,78 @@
 }
 .footer .secContent .contactDiv .inputDiv .btn .icon {
   font-size: 18px;
+}
+.footer .secContent .footerCard {
+  position: relative;
+  padding: 1rem 1rem 4rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  background: var(--bodyColor);
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  text-align: flex-start;
+  overflow: hidden;
+}
+.footer .secContent .footerCard .footerInfo {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.footer .secContent .footerCard .logoDiv .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.footer .secContent .footerCard .logoDiv .logo .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+  margin-right: 10px;
+}
+.footer .secContent .footerCard .footerParagraph {
+  font-size: 13px;
+  color: var(--textColor);
+}
+.footer .secContent .footerCard .footerSocail {
+  column-gap: 0.5rem;
+}
+.footer .secContent .footerCard .footerSocail .icon {
+  color: var(--blackColor);
+  font-size: 25px;
+}
+.footer .secContent .footerCard .footerSocail .icon:hover {
+  color: var(--PrimaryColor);
+  transition: 0.5s;
+}
+.footer .secContent .footerCard .footerLinks {
+  flex-basis: 50%;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--blackColor);
+  margin-bottom: 0.5rem;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.3 ease-in-out;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
+  font-size: 15px;
+  color: var(--greyText);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover {
+  color: var(--PrimaryColor);
+  transform: translateX(7px);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
+  color: var(--SecondaryColor);
 }/*# sourceMappingURL=footer.css.map */

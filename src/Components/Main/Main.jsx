@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './main.css'
 import {CiLocationOn} from 'react-icons/ci'
 import {BsClipboardCheck} from 'react-icons/bs'
@@ -15,9 +15,10 @@ import img9 from '../../Assets/img9.jpg'
 import img10 from '../../Assets/img10.jpg'
 import img11 from '../../Assets/img11.jpg'
 import img12 from '../../Assets/img12.jpg'
-import img13 from '../../Assets/img13.jpg'
-import img14 from '../../Assets/img14.jpg'
 
+
+import Aos, { init } from 'aos'
+import 'aos/dist/aos.css'
 const Data = [
   {
   id: 1,
@@ -126,35 +127,20 @@ const Data = [
   grade: 'CULTURAL RELAX',
   fees: '$700',
   description: 'The epitome of romance, Bora Bora is one of the best travel destination in the world. This place is known for its luxurious stays and adventurous activites'
-  },
-  {
-  id: 13,
-  imgSrc: img13,
-  destTitle: 'Bora Bora',
-  location: 'New Zealand',
-  grade: 'CULTURAL RELAX',
-  fees: '$700',
-  description: 'The epitome of romance, Bora Bora is one of the best travel destination in the world. This place is known for its luxurious stays and adventurous activites'
-  },
-  {
-  id: 14,
-  imgSrc: img14,
-  destTitle: 'Bora Bora',
-  location: 'New Zealand',
-  grade: 'CULTURAL RELAX',
-  fees: '$700',
-  description: 'The epitome of romance, Bora Bora is one of the best travel destination in the world. This place is known for its luxurious stays and adventurous activites'
   }
 ]
 
 
 const Main = () => {
-
+  // lets create react hooks
+  useEffect(() => {
+    Aos.init({duration:2000})
+  },[])
   return (
-    <section className="main container section">
+    <section data-aos="fade-up" className="main container section">
 
       <div className="secTitle">
-        <h3 className='title'> 
+        <h3 data-aos="fade-right" className='title'> 
           Most visited destinations
         </h3>
       </div>
@@ -162,7 +148,7 @@ const Main = () => {
         {
           Data.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
             return (
-              <div key={id} className="singleDestination">
+              <div data-aos="fade-up" key={id} className="singleDestination">
                 <div className="imageDiv">
                   <img src={imgSrc} alt={destTitle} className="imgg" />
                 </div>

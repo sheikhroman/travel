@@ -1,11 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './footer.css'
 import video from '../../Assets/video.mp4'
 import {FiSend, FiChevronRight} from 'react-icons/fi'
 import {MdOutlineTravelExplore} from 'react-icons/md'
 import { AiOutlineTwitter, AiFillYoutube, AiFillInstagram } from 'react-icons/ai'
-import {FaTripadvisor} from 'react-icons/fa'
+import { FaTripadvisor } from 'react-icons/fa'
+
+import Aos, { init } from 'aos'
+import 'aos/dist/aos.css'
+
 const Footer = () => {
+    // lets create react hooks
+    useEffect(() => {
+      Aos.init({duration:2000})
+    },[])
   return (
     <section className="footer">
       <div className="videoDiv">
@@ -13,13 +21,13 @@ const Footer = () => {
       </div>
       <div className="secContent container">
         <div className="contactDiv flex">
-          <div className="text">
+          <div data-aos="fade-up" className="text">
             <small>KEEP IN TOUCH</small>
             <h2>Travel with us</h2>
           </div>
           <div className="inputDiv flex">
-            <input type="" placeholder='Enter your email address' />
-            <button className="btn flex" type='submit'>
+            <input data-aos="fade-up" type="" placeholder='Enter your email address' />
+            <button data-aos="fade-up" className="btn flex" type='submit'>
               SEND <FiSend className="icon"/>
             </button>
           </div>
@@ -31,10 +39,10 @@ const Footer = () => {
                 <MdOutlineTravelExplore  className="icon"/>  Travel.
               </a>
             </div>
-            <div className="footerParagraph">
+            <div data-aos="fade-up" className="footerParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod architecto facere ab esse debitis, quidem nostrum hic praesentium neque ratione.
             </div>
-            <div className="footerSocail flex">
+            <div data-aos="fade-up" className="footerSocail flex">
             <AiOutlineTwitter className="icon"/>
             <AiFillYoutube className="icon"/>
             <AiFillInstagram className="icon"/>
@@ -43,7 +51,7 @@ const Footer = () => {
           </div>
           <div className="footerLinks grid">
             {/* Group ONE */}
-            <div className="linkGroup">
+            <div data-aos="fade-up" data-aos-duration="4000"  className="linkGroup">
               <span className="groupTitle">
                 OUR AGENCY
               </span>
@@ -69,7 +77,7 @@ const Footer = () => {
               </li>
             </div>
             {/* Group THREE */}
-            <div className="linkGroup">
+            <div data-aos="fade-up" data-aos-duration="4000"  className="linkGroup">
               <span className="groupTitle">
               PARTNRS
               </span>
@@ -95,7 +103,7 @@ const Footer = () => {
               </li>
             </div>
             {/* Group TWO */}
-            <div className="linkGroup">
+            <div data-aos="fade-up" data-aos-duration="4000" className="linkGroup">
               <span className="groupTitle">
                 LAST MINUTE
               </span>
@@ -121,8 +129,9 @@ const Footer = () => {
               </li>
             </div>
           </div>
-          <div className="footerDiv flex">
-
+          <div data-aos="fade-up" className="footerDiv flex">
+            <small>BEST TRAVEL WEBSITE</small>
+            <small>COPYRIGHTS SHEIKH ROMAN 2023</small>
           </div>
         </div>
       </div>
